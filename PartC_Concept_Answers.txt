@@ -1,0 +1,16 @@
+CATEGORY C — PART C: CONCEPT ANSWERS
+
+1. Primitive vs non-primitive data structures
+Primitive data types store a single basic value directly, such as a boolean. Non-primitive data structures combine values and organize them into a collection, such as a graph. Primitive types are the building blocks; non-primitive structures are built using them.
+
+2. Why a linked list is linear
+A linked list is linear because its elements are arranged in a sequence. Each node (except the ends) has a clear predecessor and successor, and traversal follows one node after another. Contiguous memory storage is not the definition of a linear structure; linked-list nodes may be scattered in memory and still form a linear sequence.
+
+3. O(m + n) vs O(m*n)
+Two separate loops perform m + n total iterations, so the complexity is O(m + n). If the m-iteration loop is inside the n-iteration loop, the inner loop runs m times for each of n outer iterations, giving O(m*n). Sequential work is added; nested work is multiplied.
+
+4. Trading memory for speed
+A web application can build an in-memory hash map from user IDs to user profiles when it starts. This uses extra memory to avoid repeatedly scanning a large list of profiles. The trade-off is additional space for faster average lookup time, improving repeated searches from O(n) to O(1).
+
+5. Hash map vs sorted array for employee records
+A hash map is preferable when employee records are frequently searched by ID: access, search, insertion, and deletion are O(1) on average, though worst-case operations can be O(n), and the structure uses O(n) space. A sorted array supports O(log n) search by ID, keeps records ordered, and offers O(1) indexed access. However, insertion and deletion usually take O(n) because elements may need to shift. Choose a hash map for frequent key-based updates/lookups; choose a sorted array when maintaining order and searching are more important than updates.
